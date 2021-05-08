@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [GridSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.identifyNewBikes.TestGrid">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="popularUsedCarsTest"/>
+          <include name="init"/>
+          <include name="upcomingBikesTest"/>
+        </methods>
+      </class> <!-- com.identifyNewBikes.TestGrid -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [GridSuite] -->
