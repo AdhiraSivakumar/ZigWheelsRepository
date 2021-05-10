@@ -54,9 +54,6 @@ public class UpcomingBikes extends baseUI {
 		// Clicking View More bikes
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("window.scrollBy(0,1600)", "");
-		// WebElement viewmore
-		// =driver.findElement(By.xpath("//*[@id=\"modelList\"]/li//span[text()='View
-		// More Bikes ']"));
 		WebElement viewmore = viewmoreButton;
 		executor.executeScript("arguments[0].click();", viewmore);
 		System.out.println("*****************************************************************************");

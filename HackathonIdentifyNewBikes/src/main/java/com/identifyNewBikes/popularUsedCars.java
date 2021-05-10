@@ -9,7 +9,7 @@ import com.aventstack.extentreports.Status;
 public class popularUsedCars extends baseUI {
 	public static void popularUsedCarsModel(WebDriver driver) throws Exception {
 		try {
-			closeAd(driver);// closing ad if occurs
+			//closeAd(driver);// closing ad if occurs
 			logger = report.createTest("Used cars in chennai");
 			findUsedCarsLinkText(driver);
 			String pageurl = driver.getCurrentUrl();
